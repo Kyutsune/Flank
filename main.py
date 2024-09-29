@@ -1,8 +1,7 @@
-from jeu.model.Plateau import Plateau
+from jeu.controller.Controller import Controller
 
 def main():
-    plateau = Plateau(10, 10)
-    print(plateau.getGrille())
-
+    controller = Controller(800, 500)
+    controller.controller_run()
 
 main()
