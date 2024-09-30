@@ -1,4 +1,4 @@
-from jeu.controller.Controller import Controller
+from jeu.assets.Controller import Controller
 
 def main():
     controller = Controller(800, 500)

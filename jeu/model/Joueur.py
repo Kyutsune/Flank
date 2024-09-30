@@ -18,6 +18,7 @@ class Joueur:
         self.ajouter_argent(_argent)
         self.ajouter_dette(_dette)
 
-    def mise_a_jour_reguliere_joueur(self):
+    def mise_a_jour_reguliere_joueur(self, grille):
         self.ajouter_argent(-self.dette)
+        self.ajouter_argent(grille.calcul_rente_grille())
 
